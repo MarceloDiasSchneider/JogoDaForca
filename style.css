@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Roboto:wght@500&display=swap');
+:root{
+    --cor-primaria-1: #143CCC;
+    --cor-primaria-2: #3d519933;
+    --cor-primaria-3: #00BDFF;
+    --cor-secundaria-1: #FF5F01;
+    --cor-secundaria-2: #CC3D14;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    max-width: 750px;
+    margin: auto;
+    color: var(--cor-secundaria-1);
+    background: rgb(0,1,255);
+    background: linear-gradient(10deg, rgba(0,1,255,1) 0%, rgb(142, 45, 253) 100%);
+}
+header{
+    background-color: var(--cor-primaria-2);
+    color: var(--cor-secundaria-2);
+    text-align: center;
+    height: 20vh;
+}
+header h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
+}
+header label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    max-width: 30%;
+    color: var(--cor-secundaria-2);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-template-rows: 65vh 15vh;
+    grid-template-areas: 
+    ' forca alfabeto'
+    ' palavra palavra';
+}
+#forca{
+    grid-area: forca;
+    background-color: var(--cor-primaria-2);
+    background-image: url(imagens/forca.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+
+}
+#alfabeto{
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 4rem;
+    background-color: var(--cor-primaria-2);
+    grid-area: alfabeto;
+    padding: 1rem;
+}
+.letra{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: var(--cor-primaria-1);
+
+}
+#palavra{
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 3rem;
+    background-color: var(--cor-primaria-2);
+    grid-area: palavra;
+}
+#palavra p{
+    vertical-align: bottom;
+}
